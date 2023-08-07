@@ -1,8 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useCallback, useContext, useEffect, useState } from "react";
 import Card from "./Card/Card";
 import "./Product.css";
 import axios from "axios";
 import { FilterContext } from "../useFilterContext";
+
 
 function ProductView() {
   const [mercedesChecked, setMercedesChecked] = useState(true);
@@ -27,7 +28,7 @@ function ProductView() {
 
 
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
 
 
     
@@ -64,10 +65,12 @@ function ProductView() {
     }
 
     setIsLoading(false);
-  };
+  }, [currentPage, filterData]);
+
+
   useEffect(() => {
     fetchData();
-  }, [currentPage, filterData ,]);
+  }, [fetchData]);
  
   const handlePageClick = (page) => {
     setCurrentPage(page);
