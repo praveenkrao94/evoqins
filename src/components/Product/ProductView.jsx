@@ -338,7 +338,7 @@ function ProductView() {
     value=""
     id="flexCheckCheckedSeparate3"
     checked={mobileApplication}
-    onChange={() => handleApplicationTypeChange('2')}
+    onChange={() => handleApplicationTypeChange('2')} 
   />
   <label className="form-check-label" htmlFor="flexCheckCheckedSeparate3">
     Mobile applications
