@@ -1,9 +1,9 @@
 import React from 'react';
 import './Card.css';
-import Star from './Star'; // Import the Star component
+import Star from './Star'; 
 
 function Card({ product }) {
-  const { illustration, title, description, price, offer, price_validity_text, free , external_link  , offer_validity_text,  offer_price , offer_text} = product;
+  const { illustration, title, description, price, offer, price_validity_text, free   , offer_validity_text,   offer_text} = product;
 
   const cardBodyStyle = {
     fontFamily: "'Hanken Grotesk', sans-serif",

@@ -23,9 +23,14 @@ function ProductView() {
 
   const { filterData, setFilterData } = useContext(FilterContext);
 
- 
+  useEffect(() => {
+    fetchData();
+  }, [currentPage, filterData]);
 
   const fetchData = async () => {
+
+
+    
     setIsLoading(true);
 
     const url =
@@ -61,9 +66,7 @@ function ProductView() {
     setIsLoading(false);
   };
 
-  useEffect(() => {
-    fetchData();
-  }, [currentPage, filterData]);
+ 
   const handlePageClick = (page) => {
     setCurrentPage(page);
   };
