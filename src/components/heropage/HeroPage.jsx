@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import logo from './nav.png';
+
 import ProductView from '../Product/ProductView';
 
 function HeroPage() {

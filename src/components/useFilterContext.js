@@ -5,7 +5,7 @@ export const FilterContext = createContext();
 
 export function FilterProvider({ children, initialPageNumber }) {
   const [filterData, setFilterData] = useState({
-    page_num: initialPageNumber || 1, 
+    page_num: initialPageNumber || 1,
     filter_id: null,
     segment_id: null,
     price_type: null,
@@ -21,16 +21,12 @@ export function FilterProvider({ children, initialPageNumber }) {
 
   const [segments, setSegments] = useState([]);
 
-  useEffect(() => {
-    fetchSegments();
-  }, []);
-
   const fetchSegments = async () => {
     const url =
       'https://18ebbuf8l8.execute-api.ap-south-1.amazonaws.com/demo/api/v3/user/marketplace/filter';
     const headers = {
       'Content-Type': 'application/json',
-      'Access-Token': 'eyJhbGciOiJIUzUxMiIsImlhdCI6MTYwODEwMDI4MCwiZXhwIjoxNjE1ODc2MjgwfQ.eyJ0eXBlIjozLCJpZCI6MTQ5MzMsImNyZWF0ZWQiOiIyMDIwLTEyLTE2IDA2OjMxOjIwLjczMTk2NiJ9.Ef001xBUX_ZPsgvGWCou9sUa6Q2BV9jvPWZZsnwE8qB3_IDTGaSNV0d0lmcuWab2FwEUQ3GouA9LVdd7ExmkvQ',
+      'Access-Token': 'your-access-token', // Replace with your actual access token
     };
 
     try {
@@ -40,6 +36,10 @@ export function FilterProvider({ children, initialPageNumber }) {
       console.error('Error fetching segments:', error);
     }
   };
+
+  useEffect(() => {
+    fetchSegments();
+  }, [fetchSegments]); // Add fetchSegments to the dependency array
 
   return (
     <FilterContext.Provider value={{ filterData, setFilterData, segments }}>
