@@ -1,0 +1,82 @@
+.hero-container {
+  width: 1110px;
+  height: 316px;
+  flex-shrink: 0;
+  background-color: #0461D1;
+  margin: 0 auto;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden; /* Clip content outside the container */
+  background-image: url('./Vector.png');
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  .hero-container {
+    max-width: 90%; /* Or any desired width */
+    height: 250px; /* Or any desired height */
+    background-image: none;
+  }
+}
+
+/* Adjust the .hero-container for medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-container {
+    max-width: 80%; /* Or any desired width */
+    height: 280px; /* Or any desired height */
+    background-image: none;
+  }
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%; /* Center the content vertically */
+  left: 50%; /* Center the content horizontally */
+  transform: translate(-50%, -50%); /* Center the content both vertically and horizontally */
+  z-index: 1;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    position: absolute;
+    top: 50%; /* Center the content vertically */
+    left: 50%; /* Center the content horizontally */
+    transform: translate(-50%, -50%); /* Center the content both vertically and horizontally */
+    z-index: 2;
+  }
+}
+
+.heroHeader {
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 56px;
+  color: #FFF;
+}
+
+.hero-content p {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.heroimage1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.heroimage1 img {
+  width: 100%; /* Adjust this value as needed to show half of the image outside the container */
+}

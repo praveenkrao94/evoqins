@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+.card-body{
+    font-family:'Hanken Grotesk', sans-serif;
+     
+}
+
+.card{
+    margin: 10px;
+}
+
+
+.card-title{
+    color: #444;
+text-align: center;
+font-feature-settings: 'ss03' on, 'ss01' on, 'liga' off;
+font-family:'Hanken Grotesk', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+
+.card-text{
+    width: 318px;
+    color: #444;
+font-feature-settings: 'ss03' on, 'ss01' on, 'liga' off;
+font-family:'Hanken Grotesk', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+}
+
+@media (max-width: 767px) {
+    .card-title {
+      font-size: 12px;
+      font-weight: 700;
+    }
+  
+    .card-text {
+      width: 100%; /* Full width on smaller devices */
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px; /* Adjusted line-height for smaller devices */
+    }
+  }
+  
+  /* Media query for medium devices (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .card-title {
+      font-size: 14px;
+      font-weight: 800;
+    }
+  
+    .card-text {
+      width: 100%; /* Full width on medium devices */
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 19px; /* Adjusted line-height for medium devices */
+    }
+  }
+
+
+  .priceMain{
+    color: #444;
+font-feature-settings: 'ss03' on, 'ss01' on, 'liga' off;
+font-family:'Hanken Grotesk', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+  }
+
+
+  .priceClass{
+    color: #444;
+font-feature-settings: 'ss03' on, 'ss01' on, 'liga' off;
+font-family:'Hanken Grotesk', sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+
+  .bottomButtons {
+    display: inline-flex;
+    padding: 8px 22px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #0461D1;
+    
+  }
+  
+  .Text1 {
+    color: #FFF;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #0461D1;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 18px 8px 18px;
+    
+  }
+  
+  .text2 {
+    color: #0461D1;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-flex;
+    padding: 8px 18px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #FFF;
+    border: 1px solid #0461D1;
+  }
+  
+
+
+  
+  .rating.first-three-stars span:nth-child(-n+3) {
+    color: orange;
+   
+  }
+  
+  /* Media query for medium devices (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .rating.first-three-stars span:nth-child(-n+3) {
+      color: orange;
+    }
+  }
+  
+  
+  
+  .OfferPrice {
+    color: #444;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .OfferColor {
+    color: #13d726;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  

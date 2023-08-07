@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+.sortClass {
+  color: #444;
+  font-family: 'Hanken Grotesk', sans-serif; 
+  font-size: 14px;
+  font-weight: 500; 
+  line-height: 20px;
+}
+
+
+.custom-select-wrapper {
+    position: relative;
+  }
+  
+  .custom-dropdown::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .custom-select {
+    display: flex;
+    width: 255px;
+    padding: 9px 157px 9px 16px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #F8F8F8;
+    background: #FFF;
+    box-shadow: 0px 16px 32px 0px rgba(221, 230, 237, 0.54);
+    color: #444;
+    font-feature-settings: 'ss03' on, 'ss01' on;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .custom-select option {
+    color: #444;
+    font-feature-settings: 'ss03' on, 'ss01' on;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .arrow-down {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  input.form-control {
+    font-family: 'Hanken Grotesk', sans-serif;
+    padding-left: 30px; 
+    background-image: url('https://png.pngtree.com/element_our/20190601/ourmid/pngtree-search-icon-image_1344447.jpg'); 
+    background-repeat: no-repeat;
+    background-position: left center; 
+    background-size: 30px; 
+    color: #444;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  }
+
+
+  .Develope{
+    color: #444;
+text-align: center;
+
+font-family: 'Hanken Grotesk', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+  }
+
+  .checkBoxes{
+    color: #444;
+
+    font-family: 'Hanken Grotesk', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+  }
+
+
+
+
+.small-ratings {
+  color: #444;
+  text-align: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.small-ratings .fa-star {
+  margin-right: 18px;
+}
+
+.small-ratings-container > div:nth-child(1) .fa-star:nth-child(-n + 5) {
+  color: orange;
+}
+
+.small-ratings-container > div:nth-child(2) .fa-star:nth-child(-n + 5) {
+  color: orange;
+}
+
+
+.small-ratings-container > div:nth-child(3) .fa-star:nth-child(-n + 4) {
+  color: orange;
+}
+
+
+.small-ratings-container > div:nth-child(4) .fa-star:nth-child(-n + 3) {
+  color: orange;
+}
+
+
+.small-ratings-container > div:nth-child(5) .fa-star:nth-child(1) {
+  color: orange;
+}
+
+  #headingThree{
+    color: #444;
+text-align: center;
+font-family: 'Hanken Grotesk', sans-serif;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+  }
+  
+  .aboveClass{
+    color: #444;
+
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+  }
+
+
+/* 
+  .FooterContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .FooterContent p {
+    color: #F4F9FF;
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  
+  .footerheader {
+    color: #F4F9FF;
+    text-align: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+  }
+  
+  
+ 
+
+
+
+.FooterContent button {
+  color: #0461D1;
+  font-family: 'Hanken Grotesk', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display: inline-flex;
+height: 48px;
+padding: 9px 20px;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #FFF;
+border: none;
+}
+
+
+
+
+.footerMain {
+  background-color: #0461D1;
+  background-image: url('./Vector.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+@media (max-width: 991px) {
+  .footerMain {
+    background-image: none;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+  .container-fluid {
+    height: auto; 
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    height: auto; 
+    padding: 10px; 
+  }
+  
+  .footerheader {
+    font-size: 30px; 
+  }
+  
+  .FooterContent button {
+    font-size: 12px; 
+    height: 40px; 
+    padding: 8px 16px; 
+    gap: 8px; 
+  }
+}
+
+
+ */
+
+
